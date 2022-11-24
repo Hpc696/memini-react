@@ -11,7 +11,7 @@ export default function Memi(){
 
     return (
         <div>
-        {dati.map((elemento)=>(<li className='list' key={elemento.id}><Images url={elemento.url} alt={elemento.name}/></li>))}
+        {dati.map((elemento)=>(<li className='list' key={elemento.id}><Images className='images' url={elemento.url} alt={elemento.name}/></li>))}
         </div>
     )
 }
