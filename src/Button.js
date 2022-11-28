@@ -1,5 +1,5 @@
 export default function Button(props){
     return(
-        <button>Modifica il memino</button>
+        <button onClick={props.action}>Modifica il memino</button>
     )
 }
