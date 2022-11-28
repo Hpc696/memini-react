@@ -1,4 +1,4 @@
-import Memi from './Memi'
+import ListMemi from './ListMemi'
 import Search from './Search'
 import {useState} from 'react'
 
@@ -12,8 +12,8 @@ function App() {
   }
 
   return (<>
-      <Search input={input} />
-      <Memi onChange={inputChanger}/>
+      <Search input={inputChanger}/>
+      <ListMemi input={input}/>
     </>
   );
 }
