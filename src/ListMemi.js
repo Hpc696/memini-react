@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import Button from "./Button"
 import Images from "./Images"
 
 export default function ListMemi(props){
@@ -16,13 +17,17 @@ export default function ListMemi(props){
             return elemento.name.toLowerCase().includes(props.input)
             }
         })
-
+    
+    
 
     return(
         <ul>
             {/* dati.map((elemento)=>(<li className='list' key={elemento.id}><Images url={elemento.url} alt={elemento.name}/></li>)) */}
-            {filteredDati.map((elemento) =>
+            {filteredDati.map((elemento) => <>
                 <li className='list' key={elemento.id}>{elemento.name}<Images url={elemento.url} alt={elemento.name}/></li>
+                <Button/>
+                
+                </>
             )}
         </ul>
     
